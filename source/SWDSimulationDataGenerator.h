@@ -19,11 +19,13 @@ protected:
 	U32 mSimulationSampleRateHz;
 
 protected:
-	void CreateSerialByte();
-	std::string mSerialText;
-	U32 mStringIndex;
+	//void CreateSerialByte();
+	//std::string mSerialText;
+	//U32 mStringIndex;
 
-	SimulationChannelDescriptor mSerialSimulationData;
+	SimulationChannelDescriptorGroup mSimulationGroup;
+	SimulationChannelDescriptor *mSWDIOData;
+	SimulationChannelDescriptor *mSWCLKData;
 
 };
 #endif //SWD_SIMULATION_DATA_GENERATOR
